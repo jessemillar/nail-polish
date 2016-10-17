@@ -95,18 +95,28 @@ var database = [{
 	name: "muse, myself",
 }];
 
-function searchByID(query) {
-	for (var i = 0; i < database.length; i++) {
-		if (database[i].id == query) {
-			return database[i];
+function searchByID() {
+	var searchValue = document.getElementById("id-search").value;
+
+	if (searchValue.length > 0) {
+		for (var i = 0; i < database.length; i++) {
+			if (database[i].id == searchValue) {
+				console.log("Yup");
+				return database[i];
+			}
 		}
 	}
 }
 
-function searchByName(query) {
-	for (var i = 0; i < database.length; i++) {
-		if (database[i].name == query) {
-			return database[i];
+function searchByName() {
+	var searchValue = document.getElementById("name-search").value;
+
+	if (searchValue.length > 0) {
+		for (var i = 0; i < database.length; i++) {
+			if (database[i].name == searchValue) {
+				console.log("Yup");
+				return database[i];
+			}
 		}
 	}
 }
