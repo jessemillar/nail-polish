@@ -1,6 +1,8 @@
 var database = [{
+	id: 19,
 	name: "white page",
 }, {
+	id: 32,
 	name: "tuck it in my tux",
 }, {
 	id: 942,
@@ -66,8 +68,10 @@ var database = [{
 	id: 1135,
 	name: "virgin snow",
 }, {
+	id: 310,
 	name: "go ginza",
 }, {
+	id: 748,
 	name: "naughty nautical",
 }, {
 	id: 770,
