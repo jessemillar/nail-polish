@@ -1,5 +1,5 @@
 var green = "#2ecc40";
-var red = "#ff851b";
+var red = "#ff4136";
 
 function searchByID() {
 	var searchValue = document.getElementById("id-search").value;
@@ -7,15 +7,15 @@ function searchByID() {
 	if (searchValue.length > 0) {
 		for (var i = 0; i < database.length; i++) {
 			if (database[i].id == searchValue) {
-				setBackgroundColor(green);
+				setBackgroundColor(red);
 				return database[i];
 			} else {
-				setBackgroundColor(red);
+				setBackgroundColor(green);
 			}
 		}
 	}
 }
 
 function setBackgroundColor(color) {
-	document.body.style.backgroundColor = color;
+	document.getElementsByClassName("container").style.backgroundColor = color;
 }
