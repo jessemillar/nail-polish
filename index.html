@@ -10,13 +10,12 @@
 
 <body>
     <div class="container">
-        <form class="search" action="javascript:void(0);" onsubmit="searchByID()">
-            Can I buy this Essie nailpolish for Stephanie?
+        <div class="search">
+            Can I buy this Essie nail polish for Stephanie?
 			<br>
 			<br>
-            <input id="id-search" type="number" pattern="[0-9]*" placeholder="Polish Number">
-            <input type="submit" value="Search">
-        </form>
+            <input id="id-search" type="number" pattern="[0-9]*" placeholder="Polish Number" onkeyup="searchByID()">
+        </div>
     </div>
 </body>
 
