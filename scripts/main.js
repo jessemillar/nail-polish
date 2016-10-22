@@ -1,6 +1,10 @@
 var green = "#2ecc40";
 var red = "#ff4136";
 
+window.onload = function() {
+	document.getElementById("id-search").focus();
+};
+
 function searchByID() {
 	var searchValue = document.getElementById("id-search").value;
 
@@ -17,5 +21,5 @@ function searchByID() {
 }
 
 function setBackgroundColor(color) {
-	document.getElementsByClassName("container").style.backgroundColor = color;
+	document.getElementsByClassName("container")[0].style.backgroundColor = color;
 }
