@@ -106,4 +106,7 @@ var database = [{
 }, {
 	id: 80,
 	name: "twill seeker"
+}, {
+	id: 400,
+	name: "caviar bar"
 }];
